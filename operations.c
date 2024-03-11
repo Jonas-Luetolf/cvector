@@ -59,8 +59,10 @@ vector addvec(vector *vec1, vector *vec2){
     return resvec;
 }
 
-void mulvec(vector *vec, int factor){
+vector mulvec(vector *vec, double factor){
+    vector resvec=createVector(vec->len);
     for (int i=0; i<vec->len; i++){
-        vec->components[i]*=factor;
+        resvec.components[i]=vec->components[i]*factor;
     }
+    return resvec;
 }
