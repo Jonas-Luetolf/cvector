@@ -1,5 +1,6 @@
 #ifndef LINE_H
 #define LINE_H
+#include <stdbool.h>
 #include "vector.h"
 typedef struct{
     vector start;
@@ -46,4 +47,7 @@ void freeLine(line *l);
  */
 vector getPoint(line *l, double t);
 
+
+
+bool iselementof(vector *point,line *l);
 #endif /* LINE_H */

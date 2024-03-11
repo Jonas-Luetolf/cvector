@@ -2,11 +2,7 @@
 #include <math.h>
 #include <stdbool.h>
 #include <stdlib.h>
-bool matchsize(vector *vec1, vector *vec2){
-    return vec1->len == vec2->len;
-}
-
-
+#include "helpers.h"
 
 double vecabs(vector *vec){
     double squersum = 0;
